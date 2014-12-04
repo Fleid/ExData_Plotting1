@@ -1,5 +1,5 @@
 #### My Working Directory
-# setwd("~/Documents/GitHub/EDA-Week1")
+# setwd("~/Documents/GitHub/ExData_Plotting1")
 
 fullset <- read.csv("household_power_consumption.txt",sep=";",header=TRUE)
 
