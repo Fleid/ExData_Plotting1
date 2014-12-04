@@ -17,7 +17,8 @@ t$Sub_metering_1 <- as.numeric(as.character(t$Sub_metering_1))
 t$Sub_metering_2 <- as.numeric(as.character(t$Sub_metering_2))
 t$Sub_metering_3 <- as.numeric(as.character(t$Sub_metering_3))
 
-# Histogram drawing
-png("Plot1.png",width= 480, height = 480,  units= "px")
-hist(t$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
+# Plot drawing
+png("Plot2.png",width= 480, height = 480,  units= "px")
+plot(x = t$Time, y = t$Global_active_power, type = "l", xlab="",ylab="Global Active Power (kilowatts)")
 dev.off()
+
